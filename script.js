@@ -69,12 +69,15 @@ const actualizarDatos = () => {
         if (select.value === 'USD') {
             const USD_INFO = data.bpi.USD;
             priceElement.innerHTML = `${USD_INFO.code}${USD_INFO.symbol} ${USD_INFO.rate}`;
+            actualizarDatos();
         } else if (select.value ==='GBP') {
             const USD_INFO = data.bpi.GBP;
             priceElement.innerHTML = `${USD_INFO.code}${USD_INFO.symbol} ${USD_INFO.rate}`;
+            actualizarDatos();
         } else if(select.value === 'EUR'){
             const USD_INFO = data.bpi.EUR;
             priceElement.innerHTML = `${USD_INFO.code}${USD_INFO.symbol} ${USD_INFO.rate}`;
+            actualizarDatos();
         }
       // AQUI TENEMOS LA FECHA DENTRO DE data.time.updated
 
